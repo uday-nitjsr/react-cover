@@ -1,0 +1,35 @@
+{
+  "name": "myapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-scripts": "2.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "nyc react-scripts test",
+    "eject": "react-scripts eject",
+    "wdio": "wdio"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "geckodriver": "^1.12.2",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "selenium-standalone": "^6.15.3",
+    "wdio-mocha-framework": "^0.6.4",
+    "webdriverio": "^4.14.0"
+  }
+}
