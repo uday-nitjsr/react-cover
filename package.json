@@ -12,7 +12,7 @@
     "build": "react-scripts build",
     "test": "nyc react-scripts test",
     "eject": "react-scripts eject",
-    "wdio": "wdio"
+    "wdio": "nyc wdio"
   },
   "eslintConfig": {
     "extends": "react-app"
