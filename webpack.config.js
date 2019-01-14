@@ -9,12 +9,8 @@ module.exports={
                 "test": /\.js$|\.jsx$/,
                 "exclude": /node_modules|\.spec\.js$/,
                 "use": {
-                    "loader": "babel-loader",
-                    "options":{
-                        "esModule":true
-                    }
-                },
-                "enforce":"post"
+                    "loader": "babel-loader"
+                }
             }
         ]
     }
