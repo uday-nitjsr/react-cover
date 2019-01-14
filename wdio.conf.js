@@ -80,14 +80,15 @@ exports.config = {
     baseUrl: 'http://localhost:3000',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 1000000000,
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
-    connectionRetryTimeout: 90000,
+    connectionRetryTimeout: 90000000000,
     //
     // Default request retries count
     connectionRetryCount: 3,
+    // execArgv: ['--inspect'],
     //
     // Initialize the browser instance with a WebdriverIO plugin. The object should have the
     // plugin name as key and the desired plugin options as properties. Make sure you have
@@ -134,9 +135,9 @@ exports.config = {
             loader: 'istanbul-instrumenter-loader',
             options: { esModules: true }
         },
-        enforce: 'post',
-        exclude: '/node_modules|\.spec\.js$/',
-        produceSourceMap: true
+        require: 'source-map-support/register',
+        prodiceSourceMap:true,
+        exclude: '/node_modules|\.spec\.js$/'
     },
     //
     // =====
